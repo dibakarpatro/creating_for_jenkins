@@ -3,12 +3,12 @@ node {
         git branch: 'main', url: 'https://github.com/dibakarpatro/creating_for_jenkins.git'
     }
     stage('init'){
-        echo 'terraform init'
+        sh 'terraform init'
     }
     stage('plan'){
-        echo 'terraform plan'
+        sh 'terraform plan'
     }
     stage('apply'){
-        echo 'terraform apply -auto-approve'
+        sh 'terraform apply -auto-approve'
     }
 }
