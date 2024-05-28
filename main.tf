@@ -7,6 +7,6 @@ resource "aws_instance" "dev" {
   instance_type = "t2.micro"
   key_name = "windows-demo"
   tags = {
-    Name="created_by_jenkin"
+    Name="dsp"
     }
 }
