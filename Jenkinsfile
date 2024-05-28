@@ -9,6 +9,6 @@ node {
         sh 'terraform plan'
     }
     stage('apply'){
-        sh 'terraform ${sonu} -auto-approve'
+        sh 'terraform destroy -auto-approve'
     }
 }
